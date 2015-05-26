@@ -35,6 +35,18 @@
 		list-style: none;
 	}
 
+	.rojo{
+		color:red;
+	}
+
+	.azul{
+		color:#08298A;
+	}
+
+	.center{
+		text-align: center;
+	}
+
 	blockquote, q {
 		quotes: none;
 	}

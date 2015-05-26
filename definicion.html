@@ -58,8 +58,7 @@
 													<h3><strong>¿Qué es GIT?</strong></h3>
 												</header>
 												<p>Git es un software de control de código fuente o scm (Source Code Management). En otras palabras, una herramienta que resuelve una serie de problemas a los que han de trabajar con código fuente.
-
-Modela los datos más como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, es decir, realizas un commit, éste guarda el estado del proyecto como una foto de todos los archivos en ese momento, y guarda una referencia a esa instantánea. Si dichos archivos no han sido modificados, Git sólo almacena un enlace al archivo anterior idéntico que ya hay almacenado.</p>
+												Modela los datos más como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, es decir, realizas un commit, éste guarda el estado del proyecto como una foto de todos los archivos en ese momento, y guarda una referencia a esa instantánea. Si dichos archivos no han sido modificados, Git sólo almacena un enlace al archivo anterior idéntico que ya hay almacenado.</p>
 											</section>
 
 											<section>
@@ -86,25 +85,25 @@ Modela los datos más como un conjunto de instantáneas de un mini sistema de ar
 												<header>
 													<h3><strong>Los tres estados</strong></h3>
 												</header>
-<h1>Estados</h1>
-<p>Git tiene tres estados principales en los que se pueden encontrar nuestros archivos: confirmado confirmado (committed), modificado (modified), y preparado (staged).</br>
--	Modificado: los datos han sido modificados pero todavía no están confirmados.</br>
--	Preparado: el archivo modificado está marcado para que vaya en la próxima confirmación. Es decir, al realizar un commit, dicho archivo o archivos serán confirmados y guardados en el repositorio de Git.</br>
--	Confirmado: los datos están almacenados de manera segura en la base de datos local.</p>
-                            
-     <p></p>                       
-<h1>Secciones</h1>
-<p>En consecuencia a los tres estados en los que se puede encontrar un archivo, encontramos que en Git, pueden haber tres secciones:</br>
--	Directorio local (Working directory): es una copia de una versión del proyecto, sobre los que el usuario tiene acceso para usar y modificar.</br>
--   Área de preparación (Staging area): es un estado en el que se almacena información acerca de lo que irá en la próxima confirmación o commit.</br>
--	Directorio de Git (Git directory): es donde Git almacena los metadatos y la base de datos del proyeto.</p>
-    
-    <p></p>
-<h1>Proceso</h1>
-· Primeramente iniciamos el proyecto con Git mediante el comando git init. Con ello, haremos que nuestro directorio use las funcionalidades de Git.
-</br>· En segundo lugar, crearemos nuestros archivos en dicha carpeta o directorio. En este caso, estaremos todavía en el Working directory. Una vez realizado git add, los archivos seleccionados se prepararán para ir a la Área de preparación.
-</br>· Finalmente, cuando ya tengamos un número suficientes de modificaciones y hayamos preparado todos los datos, podremos confirmarlos mediante el uso de git commit. Obtendremos el resultado de que estos archivos han sido añadidos al repositorio o directorio de Git, donde serán almacenados y tendermos nuestra base de datos del proyecto.
-									</section>
+													<h1><strong><span class="azul">· Estados</span></strong></h1>
+													<p>Git tiene tres estados principales en los que se pueden encontrar nuestros archivos: confirmado confirmado (committed), modificado (modified), y preparado (staged).</br>
+													-	Modificado: los datos han sido modificados pero todavía no están confirmados.</br>
+													-	Preparado: el archivo modificado está marcado para que vaya en la próxima confirmación. Es decir, al realizar un commit, dicho archivo o archivos serán confirmados y guardados en el repositorio de Git.</br>
+													-	Confirmado: los datos están almacenados de manera segura en la base de datos local.</p>
+													                            
+													     <p></p>                       
+													<h1><strong><span class="azul">· Secciones</span></strong></h1>
+													<p>En consecuencia a los tres estados en los que se puede encontrar un archivo, encontramos que en Git, pueden haber tres secciones:</br>
+													-	Directorio local (Working directory): es una copia de una versión del proyecto, sobre los que el usuario tiene acceso para usar y modificar.</br>
+													-   Área de preparación (Staging area): es un estado en el que se almacena información acerca de lo que irá en la próxima confirmación o commit.</br>
+													-	Directorio de Git (Git directory): es donde Git almacena los metadatos y la base de datos del proyeto.</p>
+													    
+													    <p></p>
+													<h1><strong><span class="azul">· Proceso</span></strong></h1>
+													· Primeramente iniciamos el proyecto con Git mediante el comando git init. Con ello, haremos que nuestro directorio use las funcionalidades de Git.
+													</br>· En segundo lugar, crearemos nuestros archivos en dicha carpeta o directorio. En este caso, estaremos todavía en el Working directory. Una vez realizado git add, los archivos seleccionados se prepararán para ir a la Área de preparación.
+													</br>· Finalmente, cuando ya tengamos un número suficientes de modificaciones y hayamos preparado todos los datos, podremos confirmarlos mediante el uso de git commit. Obtendremos el resultado de que estos archivos han sido añadidos al repositorio o directorio de Git, donde serán almacenados y tendermos nuestra base de datos del proyecto.
+											</section>
 										</div>
 								</div>
 							</div>
