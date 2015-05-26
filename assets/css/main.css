@@ -1822,8 +1822,41 @@
 			display: block;
 			margin: 0 0 2em 0;
 		}
-
+                
 			.image.featured img {
+				display: block;
+				width: 100%;
+			}
+
+.image2 {
+		border: 0;
+		position: relative;
+	}
+
+		.image2:before {
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image2.fit {
+			display: block;
+		}
+
+			.image2.fit img {
+				display: block;
+				width: 100%;
+			}
+
+		.image2.featured {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+                
+			.image2.featured img {
 				display: block;
 				width: 100%;
 			}
