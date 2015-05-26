@@ -10,6 +10,7 @@
 
 	</head>
 	<body class="left-sidebar">
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -42,83 +43,102 @@
 
 					<header class="special container">
 						<span class="icon fa-laptop"></span>
-						<h2>Instalación de <strong>GitHub</strong></h2>
+						<h2>Instalación & Configuración de <strong>GitHub</strong></h2>
 					</header>
 
 					<!-- One -->
 						<section class="wrapper style4 container">
 
 							<!-- Content -->
-								<div class="content">
+							<div class="content">
+								<span class="center">
+								<h2><strong>INSTALACIÓN</strong></h2>
+								</span>
+								<div class="row">
+									<div class="4u 12u(narrower)">
+										<section>
+											<span class="center">
+												<header>
+													<h3><strong>Linux y Unix</strong></h3>
+												</header>
+													<p>En Debian/Ubuntu :</br><span class="rojo">$ apt-get install git</span></br>
+													En Fedora: </br><span class="rojo">$ yum install git</span></br>
+													En Gentoo:</br>
+													           <span class="rojo">$ emerge --ask --verbose dev-vcs/git</span></br>
+													Arch Linux</br>
+													<span class="rojo">$ pacman -S git</span></br>
+													openSUSE</br>
+													<span class="rojo">$ zypper install git</span></br>
+													FreeBSD</br>
+													<span class="rojo">$ cd/usr/ports/devel/git</span></br>
+													<span class="rojo">$ make install</span></br>
+													Solaris 11 Express</br>
+													<span class="rojo">$ pkg install developer/versioning/git</span></br>
+													OpenBSD</br>
+													<span class="rojo">$ pkg_add git</span></br>
+											</span>
+										</section>
+									</div>
 
-							<div class="row">
+									<div class="4u 12u(narrower)">
+										<section>
+											<span class="center">
+												<header>
+													<h3><strong>Mac Os X</strong></h3>
+												</header>
+												<p>Mediante el enlace siguiente:</br>
+												<a href="http://sourceforge.net/projects/git-osx-installer/">http://sourceforge.net/projects/git-osx-installer/</a></br>
+												Mediante brew:</br>
+													-Instalar Homebrew:
+													<a href="http://brew.sh">http://brew.sh</a></br>
+													-Comandos:</br>
+													<span class="rojo">$ brew update </span></br>
+													<span class="rojo">$ brew install git </span></br>
+													Interfaz gráfica: </br><a href="https://mac.github.com">https://mac.github.com</a></p>
+											</span>
+										</section>
+									</div>
+
 								<div class="4u 12u(narrower)">
-
 									<section>
 										<span class="center">
-										<header>
-											<h3><strong>Linux y Unix</strong></h3>
-										</header>
-											<p>En Debian/Ubuntu :</br><span class="rojo">$ apt-get install git</span></br>
-											En Fedora: </br><span class="rojo">$ yum install git</span></br>
-											En Gentoo:</br>
-											           <span class="rojo">$ emerge --ask --verbose dev-vcs/git</span></br>
-											Arch Linux</br>
-											<span class="rojo">$ pacman -S git</span></br>
-											openSUSE</br>
-											<span class="rojo">$ zypper install git</span></br>
-											FreeBSD</br>
-											<span class="rojo">$ cd/usr/ports/devel/git</span></br>
-											<span class="rojo">$ make install</span></br>
-											Solaris 11 Express</br>
-											<span class="rojo">$ pkg install developer/versioning/git</span></br>
-											OpenBSD</br>
-											<span class="rojo">$ pkg_add git</span></br>
+											<header>
+												<h3><strong>Windows</strong></h3>
+											</header>
+											<p>Mediante uno de estos enlaces:
+											<a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a></br>
+												<a href="https://windows.github.com">https://windows.github.com</a></br>
+											</p>
 										</span>
 									</section>
-
 								</div>
-								<div class="4u 12u(narrower)">
 
-									<section>
+								<section>
 										<span class="center">
 										<header>
-											<h3><strong>Mac Os X</strong></h3>
+											<h2><strong>CONFIGURACIÓN</strong></h2>
 										</header>
-										<p>Mediante el enlace siguiente:</br>
-										<a href="http://sourceforge.net/projects/git-osx-installer/">http://sourceforge.net/projects/git-osx-installer/</a></br>
-										Mediante brew:</br>
-											-Instalar Homebrew:
-											<a href="http://brew.sh">http://brew.sh</a></br>
-											-Comandos:</br>
-											<span class="rojo">$ brew update </span></br>
-											<span class="rojo">$ brew install git </span></br>
-											Interfaz gráfica: </br><a href="https://mac.github.com">https://mac.github.com</a>
-										</p>
-										</span>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="center">
-										<header>
-											<h3><strong>Windows</strong></h3>
-										</header>
-										<p>Mediante uno de estos enlaces:
-										<a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a></br>
-											<a href="https://windows.github.com">https://windows.github.com</a></br>
-										</p>
 									</span>
-									</section>
+										<p>Inmediatamente después de instalar Git, lo primero que deberías hacer es lanzar un par de comandos de configuración. Git trae una herramienta denominada git config que permite obtener y establecer variables de configuración. 
+										</p>
+										<h3>Tu identidad</h3>
+										<p>Para establecer tu nombre de usuario y dirección de correo electrónico.</br>
+											<span class="rojo">$ git config --global user.name "name"</span></br>
+											<span class="rojo">$ git config --global user.email "email@example.com"</span></br>
+											Con la opción –global sólo necesitarás hacer esto una vez.
+										</p>
+										<h3>Comprobar la configuración</h3>
+										<p>Para poder comprobar la configuración, puedes usar el comando <span class="rojo">git config --list</span>, en el cual se listarán todas las propiedades que Git ha configurado:</br>
+											<span class="azul">git config --list</span></br>
+											<span class="azul">filter.lfs.clean=git lfs clean %f</span></br>
+											<span class="azul">filter.lfs.smudge=git lfs smudge %f</span></br>
+											<span class="azul">filter.lfs.required=true</span></br>
+											<span class="azul">user.name=name</span></br>
+											<span class="azul">user.email=email@example.com</span></br>
+										</p>
+								</section>
 
-								</div>
 							</div>
-						</section>
-									
-
-								</div>
 
 						</section>
 
