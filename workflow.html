@@ -36,7 +36,7 @@
 						</ul>
 					</nav>
 				</header>
-
+                
 			<!-- Main -->
 				<article id="main">
 
@@ -46,16 +46,27 @@
 						<p>Un flujo de trabajo o Workflow es una forma de organizar las tareas de forma que se conozca de antemano, </br>
                     que tareas prosiguen y cual es la meta o destino. Con ello, evitamos conflictos y que finalicemos con un trabajo más predecible.</p>
 					</header>
-
+                    
+                    <div class="navscroll">
+                     <ul id="main_nav">
+                                <li><a class="smoothScroll" href="#centralized">Centralized Workflow</a></li>
+                                <li><a class="smoothScroll" href="#feature">Feature Workflow</a></li>
+                                <li><a class="smoothScroll" href="#gitflow">Gitflow Workflow</a></li>
+                                <li><a class="smoothScroll" href="#forking">Forking Workflow</a></li>
+                            </ul>
+                    </div>
+        
 					<!-- One -->
 						<section class="wrapper style4 container">
-
+                            
 							<!-- Content -->
 								<div class="content">
+                                    <article id="inicio" class="post_article">
+                                    
 									<section>
 										<!-- <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
-										<header>
-                                            <a name="centralized"></a>
+										  <a name="centralized"></a>
+                                        <header>
 											<h3>1.   Centralized Workflow</h3>
 										</header>
 <p>Centralized Workflow o Flujo de Trabajo Centralizado, consiste en un único repositorio como punto central para todos los cambios del proyecto. 
@@ -68,10 +79,10 @@ Por otro lado, John también modifica el proyecto e intenta hacer otro push en G
 									</section>
                                     
                                     <section>
+                                        <a name="feature"></a>
 										<header>
                                             <hr>
-                                            <a name="feature"></a>
-											<h3>2.   Feature Branch Workflow</h3>
+                                            <h3>2.   Feature Branch Workflow</h3>
 										</header>
 <p>La idea principal es que en este flujo de trabajo, cada apartado se desarrolle en una rama diferente a la master. Una característica de este modelo son los pull request. Éstos servirán especialmente para iniciar discusiones sobre el proyecto en cuestión.
 
@@ -88,10 +99,10 @@ Una vez aceptado el pull request, deberemos sincronizar nuestro master con la de
 									</section>
                                     
                                     <section>
+                                        <a name="gitflow"></a>
 										<header>
                                             <hr>
-                                            <a name="gitflow"></a>
-											<h3>3.   Gitflow Workflow</h3>
+                                        	<h3>3.   Gitflow Workflow</h3>
 										</header>
 <p>GitflowWorkflow utiliza un repositorio central, sin embargo, los desarrolladores trabajan en sus ramas y las suben al repositorio de GitHub. 
 
@@ -115,10 +126,9 @@ Cuando el problema se haya solucionado, esta rama está obligada a hacer un merg
 									</section>
                                     
                                     <section>
-										
+										<a name="forking"></a>
 										<header>
                                             <hr>
-                                            <a name="forking"></a>
 											<h3>4.   Forking Workflow</h3>
 										</header>
 <p>Forking Workflow es un sistema en el que no se una un único servidor, sino que existe un repositorio original y de ese, los que se hayan bifurcado. Básicamente hacer un fork es realizar una copia de un proyecto, pero con un link hacia el original. 
@@ -131,7 +141,8 @@ El primer paso, hay que hacer un fork del repositorio oficial para crear una cop
 </p>
                                         <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 									</section>
-                                    
+                                
+                                    </article>
 								</div>
 
 						</section>
