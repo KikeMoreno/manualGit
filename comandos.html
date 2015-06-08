@@ -43,6 +43,7 @@
 					<header class="special container">
 						<span class="icon fa-laptop"></span>
 						<h2><strong>INSTRUCCIONES DE COMANDOS</strong></h2>
+						<p>Un resumen de las principales instrucciones de comandos de git.</p>
 					</header>
 
 					<!-- One -->
@@ -81,6 +82,8 @@
 											<span class="rojo">$ git add [archivo]</span></br>
 											Una vez realizado un git add podemos guardar los cambios con un commit, pero este archivo aun no estará en el repositorio remoto</br>
 											<span class="rojo">$ git commit -m "[descripción_del_commit]"</span></br>
+											Para eliminar los archivos del directorio de trabajo:</br>
+											<span class="rojo">$ git rm [archivo]</span>
 										</p><hr>
 									</section>
 
@@ -98,7 +101,28 @@
 										</p><hr>
 									</section>
 
+									<section>
+										<header>
+											<h3><strong>E. SINCRONIZAR CAMBIOS</strong></h3>
+										</header>
+										<p>Para recuperar todos los datos del proyecto remoto. Después de utilizar este comando, deberiamos tener referencias a todas las ramas del repositorio remoto, que podremos unir o inspeccionar.</br>
+										<span class="rojo">$ git fetch</span></br>
+										Para integrar los cambios a la rama, realiza una fusión a tres bandas entre las dos últimas instantáneas de cada rama y el ancestro común a ambas creando un nuevo snapshot y su commit correspondiente. Esta operación no es destructiva ya que no se pierde ningún commit al ejecutarla.</br>
+										<span class="rojo">$ git merge</span></br>
+										Otra forma de integrar los cambios de una rama a otra es cogiendo los cambios de una rama y reaplicarlos sobre otra, lo que viene a ser reorganizar el proyecto.
+										Esta instrucción hace que Git vaya al punto donde tú estás y donde quieres reorganizar, saca las diferencias introducidas por cada configuración de la rama, guarda las diferencias en archivos temporales, reinicia la rama actual hasta llevarla a la misma confirmación de la rama de donde quieres reorganizar y vuelve a aplicar los cambios. Es una forma de obtener un proyecto más lineal y con menos ramificaciones.</br>
+										<span class="rojo">$ git rebase</span></br>
+										Para enviar tu proyecto a un repositorio remoto:</br>
+										<span class="rojo">$ git push</span></br>
+										Para recuperar y unir automáticamente la rama remota con tu rama actual.</br>
+										<span class="rojo">$ git pull</span></br>
+
+										</p><hr>
+									</section>
+
 								</div>
+
+								<a href="#" class="image featured"><img src="images/chuleta.jpg" alt="" /></a>
 
 						</section>
 
