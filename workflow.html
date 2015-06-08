@@ -56,10 +56,9 @@
 										<header>
 											<h3><strong>1. Centralized Workflow</strong></h3>
 										</header>
-										<p>Centralized Workflow o Flujo de Trabajo Centralizado, consiste en un único repositorio como punto central para todos los cambios del proyecto. 
-										<p>Primeramente, clonamos el proyecto del repositorio de GitHub en nuestro repositorio local. Modificamos el proyecto y una vez finalizado, realizamos un commit. Finalmente, todos los cambios que queramos subir a GitHub, los desarrolladores deberán cambiar a la rama master y realizar un push.</p>
-
-										a. Posibles errores</br>
+										<p>Centralized Workflow o Flujo de Trabajo Centralizado, consiste en un único repositorio como punto central para todos los cambios del proyecto. </br>
+										Primeramente, clonamos el proyecto del repositorio de GitHub en nuestro repositorio local. Modificamos el proyecto y una vez finalizado, realizamos un commit. Finalmente, todos los cambios que queramos subir a GitHub, los desarrolladores deberán cambiar a la rama master y realizar un push.</p>
+										<p><span class="azul"><strong>a. Posibles errores</strong></span></br>
 										Imaginemos que dos desarrolladores, Kevin y John se han descargado la última actualización del proyecto, y que Kevin empieza modificar los archivos y realiza un push en origin/master. </br>
 										Por otro lado, John también modifica el proyecto e intenta hacer otro push en GitHub, sin embargo, no puede hacer el commit ya que no tiene el proyecto actualizado. De este modo, si John quiere subir sus cambios, primeramente deberá actualizar su repositorio y seguidamente, introducir sus cambios. También puede realizar git pull –rebase origin master.
 										</p>
@@ -70,11 +69,10 @@
                                             <hr>
 											<h3><strong>2. Feature Branch Workflow</strong></h3>
 										</header>
-										<p>La idea principal es que en este flujo de trabajo, cada apartado se desarrolle en una rama diferente a la master. Una característica de este modelo son los pull request. Éstos servirán especialmente para iniciar discusiones sobre el proyecto en cuestión.
-									    <p>Feature Branch Workflow consiste en un repositorio central con una rama master que continua siendo la rama oficial del proyecto. Pero, a la hora de hacer un commit directamente en la rama local master, los desarrolladores crean nuevas ramas para tratar cada apartado.</p>
-										a. Pull request</br>
-										Es una petición de un desarrollador o usuario hacia otro, para que este último incorpore los commits.
-										Cuando finalizamos una tarea, el desarrollador no realiza un merge directamente con la rama master. Sino que dicho de dicho desarrollador primeramente realiza un push de una rama feature al servidor central y envía un pull request para solicitar que se añadan sus cambios.
+										<p>La idea principal es que en este flujo de trabajo, cada apartado se desarrolle en una rama diferente a la master. Una característica de este modelo son los pull request. Éstos servirán especialmente para iniciar discusiones sobre el proyecto en cuestión.</br>
+									    Feature Branch Workflow consiste en un repositorio central con una rama master que continua siendo la rama oficial del proyecto. Pero, a la hora de hacer un commit directamente en la rama local master, los desarrolladores crean nuevas ramas para tratar cada apartado.</p>
+										<p><span class="azul"><strong>a. Pull request</strong></span></br>
+										Es una petición de un desarrollador o usuario hacia otro, para que este último incorpore los commits. Cuando finalizamos una tarea, el desarrollador no realiza un merge directamente con la rama master. Sino que dicho de dicho desarrollador primeramente realiza un push de una rama feature al servidor central y envía un pull request para solicitar que se añadan sus cambios.
 										Una vez aceptado el pull request, deberemos sincronizar nuestro master con la de GitHub. Seguidamente, realizaremos un merge de la rama feature sobre master, y subiremos la rama master a repositorio central.
 										</p>
 									</section>
@@ -85,14 +83,14 @@
 											<h3><strong>3. Gitflow Workflow</strong></h3>
 										</header>
 										<p>GitflowWorkflow utiliza un repositorio central, sin embargo, los desarrolladores trabajan en sus ramas y las suben al repositorio de GitHub.</p>
-										<p><span class="azul">a. Historical branches</span></br>
+										<p><span class="azul"><strong>a. Historical branches</strong></span></br>
 										En este sistema existen dos ramas principales: master y develop. La primera se utiliza para registrar la historia, mientras que la segunda es para incorporar cambios del resto de ramas feature.</p>
-										<p><span class="azul">b. Feature branches</span></br>
+										<p><span class="azul"><strong>b. Feature branches</strong></span></br>
 										Cada cambio que realicemos en el proyecto debería tener su propia rama, sin embargo, estas ramas denominadas feature, usarán la rama develop en vez de la master. En otras palabras, features nunca deberán interactuar de manera directa con la rama master de GitHub.
 										</p>
-										<p>c. Release branches</br>
+										<p><span class="azul"><strong>c. Release branches</strong></span></br>
 										Una vez que la rama develop ha adquirido un número suficiente de cambios, bifurcamos dicha rama mediante un fork. En la rama nueva creada denominada release, no podremos crear más cambios, únicamente tareas para orientar. Una vez finalizado, si que podrá unirse a la rama master y además a la rama develop.</p>
-										<p>d. Maintenance o Hotfix Branches</br>
+										<p><span class="azul"><strong>d. Maintenance o Hotfix Branches</strong></span></br>
 										Las ramas de mantenimiento o hotfix, como su propio nombre indica, son ramas que se bifurcan directamente de la rama master y que se usan para reparar problemas. Cuando el problema se haya solucionado, esta rama está obligada a hacer un merge hacia la rama master y la develop.
 										</p>
 									</section>
@@ -108,7 +106,7 @@
 										</br>
 										El primer paso, hay que hacer un fork del repositorio oficial para crear una copia en el servidor. Posteriormente, el desarrollador clonará el repositorio para obtener una copia en el repositorio local. Una vez que se hace un commit, este se realiza en el servidor del propio desarrollador y no en el oficial. Para que los cambios puedan mostrarse en el oficial, deberemos enviar un pull request.
 										</p>
-                                        <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                                        <a class="image2 featured"><img src="images2/3.svg" /></a>
 									</section>
                                     
 								</div>
